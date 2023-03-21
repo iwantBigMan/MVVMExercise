@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.MainActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mvvmexercise.viewModel.MainViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/setMaxNumbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/String_to_decide"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MaxDefault"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        
+        <TextView
+            android:text="@{viewModel.text}"
+            android:textSize="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pick_up"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="@{() -> viewModel.getNum()}"
+            android:text="@string/Draw_a_number"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/shape_for_circle_button">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/allNum"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/View_the_number_drawn"
+            android:textStyle="bold"
+            android:onClick="@{() -> viewModel.showAllNum()}"
+            android:background="@drawable/shape_for_circle_button">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+    </LinearLayout>
+
+</layout>

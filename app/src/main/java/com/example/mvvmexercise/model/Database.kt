@@ -1,4 +1,4 @@
-package com.example.mvvmexercise.module
+package com.example.mvvmexercise.model
 
 class Database {
     private lateinit var database: Database

@@ -2,8 +2,9 @@
     <string name="app_name">MVVMExercise</string>
     <string name="Draw_a_number">번호 뽑기</string>
     <string name="String_to_decide">숫자 최대치</string>
-    <string name="MaxDefault">기본 최대값 : 100</string>
+    <string name="MaxDefault">기본 최대값  100</string>
     <string name="View_the_number_drawn">뽑은 번호 확인</string>
     <string name="MaxNum_write">최대값을 입력하시오</string>
     <string name="Complete">완료</string>
+    <string name="Max_value_changed">변경한 최대 값 </string>
 </resources>

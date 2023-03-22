@@ -28,6 +28,7 @@ class SetMaxActivity: AppCompatActivity() {
         completeBtn.setOnClickListener {
             model.setMaxNum(Integer.parseInt(max.text.toString()))
             var intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("maxnum", max.toString() )
             startActivity(intent)
             finish()
         }

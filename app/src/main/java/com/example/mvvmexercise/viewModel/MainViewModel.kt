@@ -2,7 +2,7 @@ package com.example.mvvmexercise.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mvvmexercise.module.Database
+import com.example.mvvmexercise.model.Database
 import kotlin.random.Random
 
 class MainViewModel: ViewModel() {

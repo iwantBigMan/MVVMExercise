@@ -23,13 +23,35 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="@string/MaxDefault"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="20dp"/>
-        
+            android:text="@string/MaxDefault"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/maxnumChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/Max_value_changed"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/chageMaxNum"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
         <TextView
             android:text="@{viewModel.text}"
             android:textSize="60dp"
@@ -65,6 +87,10 @@
             android:onClick="@{() -> viewModel.showAllNum()}"
             android:background="@drawable/shape_for_circle_button">
         </androidx.appcompat.widget.AppCompatButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
 
 
 

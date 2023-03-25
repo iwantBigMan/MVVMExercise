@@ -21,13 +21,15 @@
             android:hint="변경할 최대 값을 입력하시오"
             android:layout_marginTop="300dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/complete"
             android:text="@string/Complete"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_for_circle_button_2">
+        </androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
 
 

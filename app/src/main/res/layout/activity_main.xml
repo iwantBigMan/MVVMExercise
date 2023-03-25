@@ -87,14 +87,6 @@
             android:onClick="@{() -> viewModel.showAllNum()}"
             android:background="@drawable/shape_for_circle_button">
         </androidx.appcompat.widget.AppCompatButton>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
-
-
-
-
     </LinearLayout>
 
 </layout>
